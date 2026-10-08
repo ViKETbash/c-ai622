@@ -33,8 +33,14 @@ void begin_exam(vector<function<void(examen&)>> v) {
   for (auto& add : v) {
     add(my_c);
   }
-
-  cout << my_c.name << ' ' << my_c.grade << endl;
+  cout << my_c.name << ' ' << my_c.grade;
+  if (my_c.grade <= 2) {
+    cout << " neud" << endl;
+  } else if (my_c.grade  <= 7) {
+    cout << " hor" << endl;
+  } else {
+    cout << " otl" << endl;
+  }
 }
 
 int main() {
