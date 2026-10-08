@@ -9,15 +9,15 @@ int delenie(int a, int b) {
   return c;
 }
 struct good_delenie {
-  function<int(int, int)> sol;
+  function<int(int, int)> solution;
   good_delenie(function<int(int, int)> cur) {
-    sol = cur;
+    solution = cur;
   }
   int operator()(int a, int b) {
     if (a == 0) {
-      return -1337;
+      return -4071505;
     }
-    return sol(a, b);
+    return solution(a, b);
   }
 };
 
